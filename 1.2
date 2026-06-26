@@ -1,0 +1,19 @@
+function verificarAprovacao() {
+    // Captura a entrada do usuário
+    let entrada = prompt("Digite a nota do aluno:");
+    
+    // Converte a entrada para número
+    let nota = Number(entrada);
+
+    // Valida a nota e verifica o critério de aprovação
+    if (isNaN(nota) || entrada === "") {
+        console.log("Erro: Por favor, insira uma nota válida.");
+    } else if (nota >= 10) {
+        console.log("Aprovado");
+    } else {
+        console.log("Reprovado");
+    }
+}
+
+// Executa a função
+verificarAprovacao();
