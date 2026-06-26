@@ -1,0 +1,49 @@
+// O nome não muda, usamos const. Idade e energia podem mudar, usamos let.
+const nomePersonagem = "Arthur";
+let idadePersonagem = 25;
+let nivelEnergia = 100;
+
+console.log(`O herói ${nomePersonagem} tem ${idadePersonagem} anos e sua energia atual é ${nivelEnergia}.`);
+
+
+
+
+
+let carteira = 50;
+
+// Encontrou 5 reais
+carteira += 5; 
+
+// Comprou um lanche de 12 reais
+carteira -= 12; 
+
+console.log(`O valor final que sobrou na carteira é R$ ${carteira}.`);
+
+
+
+
+
+const primeiroNome = "Matheus";
+const sobrenome = "De Paula";
+
+// Junção das strings utilizando Template Strings para incluir o espaço
+const nomeCompleto = `${primeiroNome} ${sobrenome}`;
+
+console.log(`Nome completo: ${nomeCompleto}`);
+
+
+
+
+
+
+// Correção 1: Mudamos para 'let' porque o valor vai mudar de 10 para 20
+let pontuacao = 10;
+
+// Correção 2: Juntamos o nome da variável usando camelCase (nomeDeUsuario)
+let nomeDeUsuario = "Player1";
+
+// Agora a reatribuição funciona perfeitamente
+pontuacao = 20;
+
+// Boa prática: exibir os dados para checar se funcionou
+console.log(`Usuário: ${nomeDeUsuario} | Pontuação: ${pontuacao}`);
