@@ -1,0 +1,19 @@
+function verificarParOuImpar() {
+    // Captura a entrada do usuário
+    let entrada = prompt("Digite um número inteiro:");
+    
+    // Converte a entrada para número
+    let numero = Number(entrada);
+
+    // Valida a entrada e verifica se o resto da divisão por 2 é zero
+    if (isNaN(numero) || entrada === "") {
+        console.log("Erro: Por favor, insira um número válido.");
+    } else if (numero % 2 === 0) {
+        console.log("Par");
+    } else {
+        console.log("Ímpar");
+    }
+}
+
+// Executa a função
+verificarParOuImpar();
