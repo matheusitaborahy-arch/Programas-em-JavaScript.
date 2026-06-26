@@ -1,0 +1,19 @@
+function verificarIdade() {
+    // Captura a entrada do usuário
+    let entrada = prompt("Digite a sua idade:");
+    
+    // Converte a entrada para número
+    let idade = Number(entrada);
+
+    // Valida a entrada e verifica a maioridade
+    if (isNaN(idade) || entrada.trim() === "") {
+        console.log("Erro: Por favor, insira um número válido.");
+    } else if (idade >= 18) {
+        console.log("Maior de idade");
+    } else {
+        console.log("Menor de idade");
+    }
+}
+
+// Executa a função
+verificarIdade();
