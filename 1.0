@@ -1,0 +1,14 @@
+function verificarLogin() {
+    // Captura a entrada exata do utilizador
+    let utilizador = prompt("Digite o nome de utilizador:");
+
+    // Compara o valor de forma estrita
+    if (utilizador === "admin") {
+        console.log("Bem-vindo, administrador!");
+    } else {
+        console.log("Bem-vindo, utilizador comum!");
+    }
+}
+
+// Executa a função
+verificarLogin();
