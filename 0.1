@@ -1,0 +1,19 @@
+function verificarClima() {
+    // Captura a entrada do usuário
+    let entrada = prompt("Digite a temperatura atual em °C:");
+    
+    // Converte a string para um número decimal
+    let temperatura = Number(entrada);
+
+    // Valida se a conversão resultou em um número válido
+    if (isNaN(temperatura) || entrada.trim() === "") {
+        console.log("Erro: Por favor, insira um número válido.");
+    } else if (temperatura > 30) {
+        console.log("Está calor");
+    } else {
+        console.log("Está um clima agradável");
+    }
+}
+
+// Executa a função
+verificarClima();
