@@ -1,13 +1,23 @@
-let filmes = ["Matrix", "Interestelar", "O Senhor dos Anéis"];
-filmes.push("tarzan")
-console.log (filmes)
-filmes.unshift("mario")
-console.log (filmes)
-filmes.pop()
-console.log (filmes[0])
-
-console.log(filmes.length)
+// A)
+const triplo = (numero) => {
+  return numero * 3;
+};
 
 
+// B)
+const calcularMedia = (nota1, nota2) => {
+  return (nota1 + nota2) / 2;
+};
 
-console.log (filmes)
+// A) ATV 2
+const verificarPar = numero => numero % 2 === 0;
+
+// B) ATV 2
+const converterCelsius = fahrenheit => (fahrenheit - 32) * 5/9;
+
+
+// A) ATV 3
+const somarMaisUm = numero => numero + 1;
+
+// B) ATV 3
+const subtrair = (a, b) => a - b;
