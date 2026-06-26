@@ -1,0 +1,70 @@
+// 1. Criar o objeto 'carro'
+const carro = {
+  marca: 'Toyota',
+  modelo: 'Corolla',
+  ano: 2024,
+  cor: 'Prata'
+};
+
+// 2. Exibir no console apenas a marca e a cor
+console.log(`Marca: ${carro.marca}, Cor: ${carro.cor}`);
+
+// 3. Alterar a cor do carro para uma nova cor
+carro.cor = 'Preto';
+
+// 4. Adicionar a propriedade 'preco' com um valor
+carro.preco = 130000.00;
+
+// 5. (Desafio) Adicionar o método 'ligar' e testá-lo
+carro.ligar = function() {
+  console.log(`O carro ${this.modelo} está ligado!`);
+};
+
+carro.ligar();
+
+
+
+
+
+// 1. Criar o objeto 'usuario'
+const usuario = {
+  nome: 'Matheus de Paula',
+  email: 'matheus.depaula@gmail.com',
+  id: 17,
+  estaAtivo: true
+};
+
+// 2. Exibir no console o nome e o email
+console.log(`Nome: ${usuario.nome}, Email: ${usuario.email}`);
+
+// 3. Somar 1 ano à idade (aniversário)
+usuario.idade += 1;
+
+// 4. Adicionar a propriedade 'telefone'
+usuario.telefone = '11999998888';
+
+// 5. Inverter o valor atual de 'estaAtivo' (se era true, vira false)
+usuario.estaAtivo = !usuario.estaAtivo;
+
+
+
+
+// 1. Criar o objeto 'produto'
+const produto = {
+  nome: 'Notebook',
+  precoOriginal: 3500.00,
+  desconto: 0.15 // Representa 15%
+};
+
+// 2. Exibir no console o nome e o preço original
+console.log(`Produto: ${produto.nome} - R$ ${produto.precoOriginal.toFixed(2)}`);
+
+// 3. (Desafio) Adicionar o método 'calcularPrecoFinal'
+produto.calcularPrecoFinal = function() {
+  const valorDesconto = this.precoOriginal * this.desconto;
+  return this.precoOriginal - valorDesconto;
+};
+
+// 4. Chamar o método no console para ver o resultado
+const precoFinal = produto.calcularPrecoFinal();
+console.log(`Preço final com desconto: R$ ${precoFinal.toFixed(2)}`);
