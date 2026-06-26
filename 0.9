@@ -1,0 +1,21 @@
+function verificarSinal() {
+    // Captura a entrada do usuário
+    let entrada = prompt("Digite um número:");
+    
+    // Converte a entrada para número
+    let numero = Number(entrada);
+
+    // Valida e verifica se é positivo, negativo ou zero
+    if (isNaN(numero) || entrada.trim() === "") {
+        console.log("Erro: Por favor, insira um número válido.");
+    } else if (numero > 0) {
+        console.log("Positivo");
+    } else if (numero < 0) {
+        console.log("Negativo");
+    } else {
+        console.log("O número é zero");
+    }
+}
+
+// Executa a função
+verificarSinal();
